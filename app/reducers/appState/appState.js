@@ -1,16 +1,16 @@
-const EDITOR_MODES = {
+export const EDITOR_MODES = {
     mobile: 'mobile',
-    dashboard: 'dashboard',
+        dashboard: 'dashboard',
     responsive: 'responsive',
 };
 
-const CODE_MODES = {
+export const CODE_MODES = {
     react_native: 'react_native',
     react: 'react',
     HTML: 'HTML',
 };
 
-const GRID_MODES = {
+export const GRID_MODES = {
     none: 'none',
     bootstrap3: 'bootstrap3',
     foundation: 'foundation',
@@ -23,7 +23,7 @@ const initialState = {
     user_id: '',
     readonly: true,
     snippet_id: '',
-    editorMode: EDITOR_MODES.mobile,
+    editorMode: EDITOR_MODES.dashboard,
     codeMode: CODE_MODES.react,
     gridMode: GRID_MODES.none,
 };

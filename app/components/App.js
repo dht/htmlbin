@@ -8,6 +8,7 @@ import CodeEditor from './CodeEditor';
 import RootModal from './Modals/RootModalContainer';
 
 import Drawer from 'material-ui-extensions/Drawer';
+import {EDITOR_MODES, CODE_MODES, GRID_MODES} from '../reducers/appState/appState';
 
 import {listenToState_adhock, stopToListen} from '../utils/elements_api'
 
@@ -61,11 +62,24 @@ export default class App extends React.Component {
     }
 
     render() {
-        const {readonly, params} = this.props;
-        const {width = 320, height = 528} = params;
+        const {readonly, params, editorMode} = this.props;
+        let {width, height} = params;
         const {drawerOpen} = this.state;
+        let zoom = 1.2;
 
-        const zoom = 1.2;
+        switch (editorMode) {
+            case EDITOR_MODES.mobile:
+                width = width || 320;
+                height = height || 528;
+                zoom = 1.2;
+                break;
+
+            case EDITOR_MODES.dashboard:
+                width = width || 1280;
+                height = height || 700;
+                zoom = 1.0;
+                break;
+        }
 
         return <div className="App-container">
             <Drawer

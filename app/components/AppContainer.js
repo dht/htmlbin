@@ -8,13 +8,16 @@ const mapStateToProps = (state, ownProps) => {
 	const {flexState} = state,
 		{appState} = flexState,
 		{dataFieldModalOn, showPlaceholderPopover, showSnippetPopover,} = appState,
-		{readonly} = state.appState;
+		{readonly, editorMode, codeMode, gridMode} = state.appState;
 
 	return {
 		readonly,
         dataFieldModalOn,
 		showPlaceholderPopover,
         showSnippetPopover,
+        editorMode,
+        codeMode,
+        gridMode,
 	}
 }
 
