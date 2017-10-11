@@ -1,7 +1,7 @@
 {
-  "name": "rnbin",
-  "version": "0.0.35",
-  "description": "Collaborative React Native WYSIWYG editor",
+  "name": "htmlbin",
+  "version": "0.0.36",
+  "description": "Collaborative React WYSIWYG editor",
   "main": "index.js",
   "module": "./index.js",
   "jsnext:main": "./index.es.js",
@@ -16,7 +16,7 @@
   "peerDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/dht/rnbin.git"
+    "url": "https://github.com/dht/htmlbin.git"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

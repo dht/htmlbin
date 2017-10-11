@@ -1,19 +1,19 @@
-# rnbin
+# htmlbin
 
-A React Native WYSIWYG playground  
-[https://rnbin.com](https://rnbin.com)
+A layout WYSIWYG playground for ReactJS 
+[https://htmlbin.com](https://htmlbin.com)
 
-![rnbin](https://github.com/dht/rnbin/raw/master/app/images/screenshot.png "rnbin screenshot")
+![htmlbin](https://github.com/dht/rnbin/raw/master/app/images/screenshot.png "rnbin screenshot")
 
 
 ## Usage
 
-When you navigate to the main rnbin page a new snippet is created for you. 
+When you navigate to the main HtmlBin page a new snippet is created for you. 
 Similarly to other gists services every change you make is autosaved. 
 
 #### snippet example
 
-An example of a [snippet](https://rnbin.com/#/a181da77) with the React Native "hello world".
+An example of a [snippet](https://htmlbin.com/#/a181da77) with the React "hello world".
 
 ## Shorcut
 
@@ -55,7 +55,7 @@ To listen to component "F19nfan" (important: see NOTE):
 ```sh
 lpm-cli -s F19nfan -f Component.js
 ```
-NOTE: use with cauton. The Component.js is overwritten everytime you make a change in rnbin.com.
+NOTE: use with cauton. The Component.js is overwritten everytime you make a change in htmlbin.com.
 
 ## Incentive    
 This is part of the [lpm](https://github.com/dht/lpm) project. The goal is to provide tools and specifications for cross-format layout development.
