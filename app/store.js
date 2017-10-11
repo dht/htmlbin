@@ -4,8 +4,8 @@ import autosave from './middleware/autosave'
 import imageDrop from './middleware/imageDrop'
 import readonly from './middleware/readonly'
 
-import rnbinApp from './reducers';
+import htmlbinApp from './reducers';
 
-export default createStore(rnbinApp, compose(applyMiddleware(ReduxThunk, readonly, autosave, imageDrop),
+export default createStore(htmlbinApp, compose(applyMiddleware(ReduxThunk, readonly, autosave, imageDrop),
     window.devToolsExtension ? window.devToolsExtension() : f => f)); // logger , firebase, recorder ,autosave
 
